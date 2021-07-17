@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-07-09 13:24+0500\n"
+"PO-Revision-Date: 2021-07-09 13:24+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: bot.php\n"
+
+#: bot.php:37 bot.php:46
+msgid ""
+"This bot helps you to check if a domain name is busy or not. to check a "
+"domain send domain name as example.com"
+msgstr ""
+"Bu siz domenni band yoki band emasligini tekshirib beradi. Sinab ko'rish "
+"uchun example.com ko'rinishadi yuboring"
+
+#: bot.php:81
+msgid "undefined error occured!"
+msgstr "noma'lum xatolik yuz berdi!"
+
+#: bot.php:91
+msgid ""
+"Welcome. This bot helps you to check if a domain name is busy or not. to "
+"check a domain send domain name as example.com"
+msgstr ""
+"Xush kelibsiz! Bu siz domenni band yoki band emasligini tekshirib beradi. "
+"Sinab ko'rish uchun example.com ko'rinishadi yuboring"
+
+#: bot.php:121 bot.php:178
+msgid ""
+"WELL! you have changed your language. This bot helps you to check if a "
+"domain name is busy or not. to check a domain send domain name as example.com"
+msgstr ""
+"Ajoyib! Bu siz domenni band yoki band emasligini tekshirib beradi. Sinab "
+"ko'rish uchun example.com ko'rinishadi yuboring"
+
+#: bot.php:150
+msgid ""
+"you have changed your language. This bot helps you to check if a domain name "
+"is busy or not. to check a domain send domain name as example.com"
+msgstr ""
+"siz tilni o'zgartirdiz. Bu siz domenni band yoki band emasligini tekshirib "
+"beradi. Sinab ko'rish uchun example.com ko'rinishadi yuboring"
+
+#: bot.php:207 bot.php:218
+msgid ""
+"Welcome. This bot helps you to check if a domain name is busy or not. to "
+"check a domain send domain name as example.com."
+msgstr ""
+"Xush kelibsiz! Bu siz domenni band yoki band emasligini tekshirib beradi. "
+"Sinab ko'rish uchun example.com ko'rinishadi yuboring."
+
+#: bot.php:236
+msgid ""
+"Unknown problem occured while checking your domain. Please, try later again"
+msgstr ""
+"Domenni tekshirishda noma'lum xatolik yuz berdi. Iltimos birozdan keyin "
+"qayta urinib ko'ring"
+
+#: bot.php:247
+msgid "hidden"
+msgstr "yashirin"
+
+#: bot.php:251
+msgid "Domain"
+msgstr "Domen"
+
+#: bot.php:252
+msgid "Created"
+msgstr "Yaratilgan"
+
+#: bot.php:253
+msgid "Expires"
+msgstr "Tugash muddati"
+
+#: bot.php:254
+msgid "Registrar"
+msgstr "Ro'yxatdan o'tkizuvchi"
+
+#: bot.php:255
+msgid "Owner"
+msgstr "Domen egasi"

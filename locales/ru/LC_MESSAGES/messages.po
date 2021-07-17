@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-07-09 11:04+0500\n"
+"PO-Revision-Date: 2021-07-09 11:06+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: bot.php\n"
+
+#: bot.php:37 bot.php:46
+msgid ""
+"This bot helps you to check if a domain name is busy or not. to check a "
+"domain send domain name as example.com"
+msgstr ""
+"Этот бот поможет вам проверить, занято ли доменное имя. для проверки домена. "
+"Отправьте доменное имя как example.com"
+
+#: bot.php:92
+msgid "undefined error occured!"
+msgstr "произошла неопределенная ошибка!"
+
+#: bot.php:102
+msgid ""
+"Welcome. This bot helps you to check if a domain name is busy or not. to "
+"check a domain send domain name as example.com"
+msgstr ""
+"Добро пожаловать. Этот бот поможет вам проверить, занято ли доменное имя. "
+"Для проверки домена отправьте доменное имя как example.com"
+
+#: bot.php:130 bot.php:158 bot.php:186
+msgid ""
+"WELL! you have changed your language. This bot helps you to check if a "
+"domain name is busy or not. to check a domain send domain name as example.com"
+msgstr ""
+"Круто! Вы изменили язык интерфейс. Этот бот поможет вам проверить, занято ли "
+"доменное имя. Для проверки домена отправьте доменное имя как example.com"
+
+#: bot.php:208 bot.php:219
+msgid ""
+"Welcome. This bot helps you to check if a domain name is busy or not. to "
+"check a domain send domain name as example.com."
+msgstr ""
+"Добро пожаловать. Этот бот поможет вам проверить, занято ли доменное имя. "
+"Для проверки домена отправьте доменное имя как example.com."
+
+#: bot.php:237
+msgid ""
+"Unknown problem occured while checking your domain. Please, try later again"
+msgstr ""
+"При проверке вашего домена возникла неизвестная проблема. Пожалуйста, "
+"попробуйте позже еще раз"
+
+#: bot.php:248
+msgid "hidden"
+msgstr "засекречен"
+
+#: bot.php:252
+msgid "Domain"
+msgstr "Домен"
+
+#: bot.php:253
+msgid "Created"
+msgstr "Создан"
+
+#: bot.php:254
+msgid "Expires"
+msgstr "Истекает"
+
+#: bot.php:255
+msgid "Registrar"
+msgstr "Регистратор"
+
+#: bot.php:256
+msgid "Owner"
+msgstr "Владелец"

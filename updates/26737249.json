@@ -1,0 +1,2 @@
+{"update_id":26737249,
+"message":{"message_id":162,"from":{"id":94665561,"is_bot":false,"first_name":"Murod","last_name":"Parmonov","username":"parmonov98","language_code":"en"},"chat":{"id":94665561,"first_name":"Murod","last_name":"Parmonov","username":"parmonov98","type":"private"},"date":1625197098,"text":"http://localhost:5555/bot1731382985:AAGjQCZ2ZXCw5tWVJGwpC04AZeQQFuN8DVg/setWebhook?url=http://127.0.0.1:3000/bot.php","entities":[{"offset":87,"length":29,"type":"url"}]}}

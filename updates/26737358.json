@@ -1,0 +1,2 @@
+{"update_id":26737358,
+"message":{"message_id":704,"from":{"id":369616959,"is_bot":false,"first_name":"Ilyos","last_name":"Olimov","username":"ilyosdev","language_code":"en"},"chat":{"id":369616959,"first_name":"Ilyos","last_name":"Olimov","username":"ilyosdev","type":"private"},"date":1626534377,"text":"/en","entities":[{"offset":0,"length":3,"type":"bot_command"}]}}
