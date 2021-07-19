@@ -254,4 +254,28 @@ class User
   {
     return $this->status;
   }
+
+    /**
+     * Set lang.
+     *
+     * @param string $lang
+     *
+     * @return User
+     */
+    public function setLang($lang)
+    {
+        $this->lang = $lang;
+
+        return $this;
+    }
+
+    /**
+     * Get lang.
+     *
+     * @return string
+     */
+    public function getLang()
+    {
+        return $this->lang;
+    }
 }

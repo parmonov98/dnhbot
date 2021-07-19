@@ -4,7 +4,9 @@
         "io-developer/php-whois": "^4.0",
         "doctrine/cache": "^2.0",
         "symfony/cache": "^5.3",
-        "gettext/gettext": "^5.5"
+        "gettext/gettext": "^5.5",
+        "peppeocchi/php-cron-scheduler": "^4.0",
+        "mikehaertl/php-shellcommand": "^1.6"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.3"

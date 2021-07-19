@@ -51,11 +51,11 @@ class User
 
 
   /**
-   * One author can write many post
-   * @OneToMany(targetEntity="Post", mappedBy="author", cascade={"all"})
+   * One author can write many pattern
+   * @OneToMany(targetEntity="Pattern", mappedBy="author", cascade={"all"})
    * @var Doctrine\Common\Collection\ArrayCollection
    */
-  private $posts;
+  private $patterns;
 
 
   /**

@@ -14,10 +14,12 @@ error_reporting(E_ALL);
 // echo 1;
 require_once('src/whois.main.php');
 
+
 require 'bootstrap.php';
+use mikehaertl\shellcommand\Command;
 
 require "entities/User.php";
-require "entities/Post.php";
+require "entities/Pattern.php";
 
 use Doctrine\DBAL\Exception\UniqueConstraintViolationException;
 
@@ -133,7 +135,7 @@ if ($request['message']['text'] === '/en') {
 if ($request['message']['text'] === '/uz') {
   // Retrieve the author by its last name
   $user = $entityManager->getRepository('entities\User')->findOneBy(['telegram_id' => $request['message']['from']['id']]);
-  // setLanguage($user, 'uz');
+  setLanguage($user, 'uz');
   // die;
 
   $entityManager->persist($user);
@@ -189,7 +191,6 @@ if ($request['message']['text'] === '/ru') {
 }
 
 
-$whois = new Whois();
 if (!isset($request['message']['entities']) || $request['message']['entities'][0]['type'] !== 'url') {
   $data = [
     'chat_id' => $request['message']['from']['id'],
@@ -232,38 +233,80 @@ setLanguage($user);
 // dump($user);
 // die;
 
-// Getting parsed domain info
-try {
-  $result = $whois->Lookup($query, false);
-} catch (Exception $e) {
-  dump($e);
-  // dump($e->getMessage());
-  $data = [
-    'chat_id' => $request['message']['from']['id'],
-    'text' => gettext("Unknown problem occured while checking your domain. Please, try later again")
-  ];
-
-  sendMessage($data, 'sendMessage');
-  die;
+$raw = null;
+$command = new Command('/usr/bin/whois ' . $query);
+if ($command->execute()) {
+    $raw = $command->getOutput();
+} else {
+    echo $command->getError();
+    $exitCode = $command->getExitCode();
 }
 
-if (isset($result['rawdata'])) {
-  // dump($result);
-  $rows = $result['rawdata'];
-  $raw = implode("\n", $rows);
+// die;
+// Getting parsed domain info
+// try {
+//   // $result = $whois->Lookup($query, true);
+// } catch (Exception $e) {
+//   // dump($e);
+//   // dump($e->getMessage());
+//   $data = [
+//     'chat_id' => $request['message']['from']['id'],
+//     'text' => gettext("Unknown problem occured while checking your domain. Please, try later again")
+//   ];
+
+//   sendMessage($data, 'sendMessage');
+//   die;
+// }
+
+if ($raw) {
+  dump($raw);
+  // $rows = $result['rawdata'];
+  // $raw = implode("\n", $rows);
 // echo($raw);die;
 
   preg_match("/domain name:.+\n/i", $raw, $domains);
-  $domainName = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $domains[0])[1]));
-  preg_match("/registrar:.+\n/i", $raw, $registrars);
-  $registrar = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $registrars[0])[1]));
+  // dump($domains);die;
+  if (isset($domains[0])) {
+    $domainName = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $domains[0])[1]));
+    
+  }else{
+    preg_match("/domain:.+\n/i", $raw, $domains);
+    $domainName = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $domains[0])[1]));  
+  }
+  preg_match("/registrar:.+\n/i", $raw, $registrars);    
+  if (isset($registrars[0])) {
+    $registrar = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $registrars[0])[1]));
+  }else{
+    preg_match("/registrant:.+\n/i", $raw, $registrars);
+    $registrar = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $registrars[0])[1]));
+  }
   preg_match("/creation date:.+\n/i", $raw, $creationDates);
-  $creationDate = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $creationDates[0])[1]));
-  preg_match("/creation date:.+\n/i", $raw, $expirationDates);
-  $expirationDate = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $expirationDates[0])[1]));
+  if (isset($creationDates[0])) {
+    $creationDate = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $creationDates[0])[1]));
+  }else{
+    preg_match("/created:.+\n/i", $raw, $creationDates);
+    $creationDate = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $creationDates[0])[1]));
+  }
+  
+  preg_match("/expiration date:.+\n/i", $raw, $expirationDates);
+  if (isset($expirationDates[0])) {
+    $creationDate = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $expirationDates[0])[1]));
+  }else{
+    preg_match("/paid-till:.+\n/i", $raw, $expirationDates);
+    $expirationDate = strtoupper(str_replace([" ", "\n"], ["", ""], explode(":", $expirationDates[0])[1]));
+  }
   preg_match("/(?<=Registrant:)(?s)(.*)(?=Creation Date)/im", $raw, $owners);
+  if (isset($owners[0])) {
+    $owner = strtoupper(str_replace(["\n"], [""], $owners[0]));
+  }else{
+    preg_match("/(?<=org:)(?s)(.*)(?=registrar)/im", $raw, $owners);
+    $owner = strtoupper(str_replace(["\n"], [""], $owners[0]));
+  }
+
+  
   // dump($owners);die;
-  echo $owner = strtoupper(str_replace(["\n"], [""], $owners[0]));
+
+  
   // $domainName = strtoupper($result['regrinfo']['domain']['name']);
   // $domainName = $info->domainName;
   // $expirationDate = date("Y-m-d", $info->expirationDate);
