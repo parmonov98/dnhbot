@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-09 11:04+0500\n"
-"PO-Revision-Date: 2021-07-09 11:06+0500\n"
+"POT-Creation-Date: 2021-07-19 11:50+0500\n"
+"PO-Revision-Date: 2021-07-19 11:51+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -10,32 +10,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
-"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-Basepath: ../../../routes\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Poedit-SearchPath-0: bot.php\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: bot.php:37 bot.php:46
-msgid ""
-"This bot helps you to check if a domain name is busy or not. to check a "
-"domain send domain name as example.com"
-msgstr ""
-"Этот бот поможет вам проверить, занято ли доменное имя. для проверки домена. "
-"Отправьте доменное имя как example.com"
-
-#: bot.php:92
-msgid "undefined error occured!"
-msgstr "произошла неопределенная ошибка!"
-
-#: bot.php:102
-msgid ""
-"Welcome. This bot helps you to check if a domain name is busy or not. to "
-"check a domain send domain name as example.com"
-msgstr ""
-"Добро пожаловать. Этот бот поможет вам проверить, занято ли доменное имя. "
-"Для проверки домена отправьте доменное имя как example.com"
-
-#: bot.php:130 bot.php:158 bot.php:186
+#: callback_queries.php:20 callback_queries.php:40 callback_queries.php:58
+#: messages.php:79 messages.php:127
 msgid ""
 "WELL! you have changed your language. This bot helps you to check if a "
 "domain name is busy or not. to check a domain send domain name as example.com"
@@ -43,41 +24,81 @@ msgstr ""
 "Круто! Вы изменили язык интерфейс. Этот бот поможет вам проверить, занято ли "
 "доменное имя. Для проверки домена отправьте доменное имя как example.com"
 
-#: bot.php:208 bot.php:219
+#: callback_queries.php:25 callback_queries.php:44 callback_queries.php:62
+msgid "Language changed"
+msgstr "Язык изменен"
+
+#: messages.php:7
+msgid ""
+"This bot helps you to check if a domain name is busy or not. to check a "
+"domain send domain name as example.com"
+msgstr ""
+"Этот бот поможет вам проверить, занято ли доменное имя. для проверки домена. "
+"Отправьте доменное имя как example.com"
+
+#: messages.php:34
+msgid ""
+"Welcome back! If you want to change language choose one of languages below."
+msgstr ""
+"Добро пожаловать. Если Вы хотите изменить язык, используйте кнопки внизу."
+
+#: messages.php:44
+msgid "undefined error occured!"
+msgstr "произошла неопределенная ошибка!"
+
+#: messages.php:54
 msgid ""
 "Welcome. This bot helps you to check if a domain name is busy or not. to "
-"check a domain send domain name as example.com."
+"check a domain send domain name as example.com"
 msgstr ""
 "Добро пожаловать. Этот бот поможет вам проверить, занято ли доменное имя. "
-"Для проверки домена отправьте доменное имя как example.com."
+"Для проверки домена отправьте доменное имя как example.com"
 
-#: bot.php:237
+#: messages.php:100
 msgid ""
-"Unknown problem occured while checking your domain. Please, try later again"
+"you have changed your language. This bot helps you to check if a domain name "
+"is busy or not. to check a domain send domain name as example.com"
 msgstr ""
-"При проверке вашего домена возникла неизвестная проблема. Пожалуйста, "
-"попробуйте позже еще раз"
+"круто! Вы изменили язык интерфейс. Этот бот поможет вам проверить, занято ли "
+"доменное имя. Для проверки домена отправьте доменное имя как example.com"
 
-#: bot.php:248
-msgid "hidden"
-msgstr "засекречен"
+#: messages.php:139 messages.php:157
+msgid "Invalid domain or url. send you the domain as example.com"
+msgstr "Не корректный Адрес или домен. Отправьте домен как example.ru"
 
-#: bot.php:252
+#: messages.php:253
 msgid "Domain"
 msgstr "Домен"
 
-#: bot.php:253
+#: messages.php:254
 msgid "Created"
 msgstr "Создан"
 
-#: bot.php:254
+#: messages.php:255
 msgid "Expires"
 msgstr "Истекает"
 
-#: bot.php:255
+#: messages.php:256
 msgid "Registrar"
 msgstr "Регистратор"
 
-#: bot.php:256
+#: messages.php:257
 msgid "Owner"
 msgstr "Владелец"
+
+#~ msgid ""
+#~ "Welcome. This bot helps you to check if a domain name is busy or not. to "
+#~ "check a domain send domain name as example.com."
+#~ msgstr ""
+#~ "Добро пожаловать. Этот бот поможет вам проверить, занято ли доменное имя. "
+#~ "Для проверки домена отправьте доменное имя как example.com."
+
+#~ msgid ""
+#~ "Unknown problem occured while checking your domain. Please, try later "
+#~ "again"
+#~ msgstr ""
+#~ "При проверке вашего домена возникла неизвестная проблема. Пожалуйста, "
+#~ "попробуйте позже еще раз"
+
+#~ msgid "hidden"
+#~ msgstr "засекречен"

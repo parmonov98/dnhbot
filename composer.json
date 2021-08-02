@@ -6,7 +6,9 @@
         "symfony/cache": "^5.3",
         "gettext/gettext": "^5.5",
         "peppeocchi/php-cron-scheduler": "^4.0",
-        "mikehaertl/php-shellcommand": "^1.6"
+        "mikehaertl/php-shellcommand": "^1.6",
+        "nesbot/carbon": "^2.51",
+        "parmonov98/dotenv": "dev-main"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.3"
