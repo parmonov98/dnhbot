@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-08-04 08:59+0500\n"
-"PO-Revision-Date: 2021-08-04 08:59+0500\n"
+"POT-Creation-Date: 2021-08-04 09:15+0500\n"
+"PO-Revision-Date: 2021-08-04 09:15+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uz\n"
@@ -16,11 +16,15 @@ msgstr ""
 "X-Poedit-SearchPath-1: libs\n"
 
 #: libs/functions.php:76
-msgid "Notify Me 🗣"
+#, fuzzy
+#| msgid "Notify Me 🗣"
+msgid "Notify Me"
 msgstr "Xabar ber 🗣"
 
 #: libs/functions.php:82
-msgid "Test message 📥"
+#, fuzzy
+#| msgid "Test message 📥"
+msgid "Test message"
 msgstr "Test xabar 📥"
 
 #: routes/callback_queries.php:20 routes/callback_queries.php:40
