@@ -289,7 +289,9 @@ $ownerText = gettext("Owner");
 
 $data = [
   'chat_id' => $request['message']['from']['id'],
-  'text' => "{$domainText}: {$domain} => $IPAdress ;\n{$creationDateText}: {$creationDate} ;\n{$expirationDateText}: {$expirationDate};\n{$registrarText}: {$registrar} ;\n{$ownerText}: {$owner}."
+  'text' => "<u><b>{$domainText}</b></u>: {$domain} => $IPAdress ;\n<u><b>{$creationDateText}</b></u>: {$creationDate} ;\n<u><b>{$expirationDateText}</b></u>: {$expirationDate};\n<u><b>{$registrarText}</b></u>: {$registrar} ;\n<u><b>{$ownerText}</b></u>: {$owner}.",
+  'parse_mode' => 'HTML',
+  'reply_markup' => json_encode(getNotifyMeButtons($query))
 ];
 
 sendMessage($data, 'sendMessage');

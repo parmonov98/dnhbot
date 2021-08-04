@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": "^7.4",
         "doctrine/orm": "*",
         "io-developer/php-whois": "^4.0",
         "doctrine/cache": "^2.0",

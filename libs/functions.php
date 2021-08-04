@@ -66,6 +66,27 @@ function getLanguageInlineKeyboard()
   ];
   
 }
+function getNotifyMeButtons($domain)
+{
+  
+  return [
+    'inline_keyboard' => [
+      [
+        [
+          'text' => "Notify Me 🗣",
+          "callback_data" => 'notify/' . $domain
+        ],        
+      ],
+      [
+        [
+          'text' => "Test message 📥",
+          "callback_data" => 'send/' . $domain
+        ],        
+      ]
+    ]    
+  ];
+  
+}
 
 function startsWith($string, $startString)
 {
