@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-19 11:55+0500\n"
-"PO-Revision-Date: 2021-07-19 11:55+0500\n"
+"POT-Creation-Date: 2021-08-04 08:59+0500\n"
+"PO-Revision-Date: 2021-08-04 08:59+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uz\n"
@@ -10,12 +10,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
-"X-Poedit-Basepath: ../../../routes\n"
+"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-0: routes\n"
+"X-Poedit-SearchPath-1: libs\n"
 
-#: callback_queries.php:20 callback_queries.php:40 callback_queries.php:58
-#: messages.php:79 messages.php:127
+#: libs/functions.php:76
+msgid "Notify Me 🗣"
+msgstr "Xabar ber 🗣"
+
+#: libs/functions.php:82
+msgid "Test message 📥"
+msgstr "Test xabar 📥"
+
+#: routes/callback_queries.php:20 routes/callback_queries.php:40
+#: routes/callback_queries.php:58 routes/messages.php:80
+#: routes/messages.php:128
 msgid ""
 "WELL! you have changed your language. This bot helps you to check if a "
 "domain name is busy or not. to check a domain send domain name as example.com"
@@ -23,11 +33,16 @@ msgstr ""
 "Ajoyib! Bu siz domenni band yoki band emasligini tekshirib beradi. Sinab "
 "ko'rish uchun example.com ko'rinishadi yuboring"
 
-#: callback_queries.php:25 callback_queries.php:44 callback_queries.php:62
+#: routes/callback_queries.php:25 routes/callback_queries.php:44
+#: routes/callback_queries.php:62
 msgid "Language changed"
 msgstr "Til o'zgardi"
 
-#: messages.php:7
+#: routes/callback_queries.php:73
+msgid "You created a task to notify about domain changes."
+msgstr "Siz domenda bo'ladigan o'zgarishlarga yozildiz."
+
+#: routes/messages.php:8
 msgid ""
 "This bot helps you to check if a domain name is busy or not. to check a "
 "domain send domain name as example.com"
@@ -35,18 +50,18 @@ msgstr ""
 "Bu siz domenni band yoki band emasligini tekshirib beradi. Sinab ko'rish "
 "uchun example.com ko'rinishadi yuboring"
 
-#: messages.php:34
+#: routes/messages.php:35
 msgid ""
 "Welcome back! If you want to change language choose one of languages below."
 msgstr ""
 "Qaytganizdan xursandman! Tilni o'zgartirmoqchi bo'lsangiz pastdagi "
 "tugmalardan foydalaning."
 
-#: messages.php:44
+#: routes/messages.php:45
 msgid "undefined error occured!"
 msgstr "noma'lum xatolik yuz berdi!"
 
-#: messages.php:54
+#: routes/messages.php:55
 msgid ""
 "Welcome. This bot helps you to check if a domain name is busy or not. to "
 "check a domain send domain name as example.com"
@@ -54,7 +69,7 @@ msgstr ""
 "Xush kelibsiz! Bu siz domenni band yoki band emasligini tekshirib beradi. "
 "Sinab ko'rish uchun example.com ko'rinishadi yuboring"
 
-#: messages.php:100
+#: routes/messages.php:101
 msgid ""
 "you have changed your language. This bot helps you to check if a domain name "
 "is busy or not. to check a domain send domain name as example.com"
@@ -62,28 +77,33 @@ msgstr ""
 "siz tilni o'zgartirdiz. Bu siz domenni band yoki band emasligini tekshirib "
 "beradi. Sinab ko'rish uchun example.com ko'rinishadi yuboring"
 
-#: messages.php:139 messages.php:157
+#: routes/messages.php:140 routes/messages.php:156
 msgid "Invalid domain or url. send you the domain as example.com"
 msgstr ""
 "Noto'g'ri domen yoki URL. Iltimos domenni example.uz ko'rinishida yuboring"
 
-#: messages.php:253
+#: routes/messages.php:198 routes/messages.php:211 routes/messages.php:226
+#: routes/messages.php:240 routes/messages.php:253 routes/messages.php:275
+msgid "-"
+msgstr ""
+
+#: routes/messages.php:281
 msgid "Domain"
 msgstr "Domen"
 
-#: messages.php:254
+#: routes/messages.php:282
 msgid "Created"
 msgstr "Yaratilgan"
 
-#: messages.php:255
+#: routes/messages.php:283
 msgid "Expires"
 msgstr "Tugash muddati"
 
-#: messages.php:256
+#: routes/messages.php:284
 msgid "Registrar"
 msgstr "Ro'yxatdan o'tkizuvchi"
 
-#: messages.php:257
+#: routes/messages.php:285
 msgid "Owner"
 msgstr "Domen egasi"
 

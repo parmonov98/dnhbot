@@ -64,6 +64,21 @@ switch ($callback_data) {
     break;
   
   default:
-    # code...
+  
+    if (strpos($callback_data, '/') !== false) {
+      $pieces = explode('/', $callback_data);
+      if($pieces[0] == 'notify'){
+        
+
+        answerCallbackQuery(_("You created a task to notify about domain changes."), false);
+        
+        $data =  [
+          'chat_id' => $user->getTelegramId(),
+          'text' => "PING"
+        ];
+        sendMessage($data, 'sendMessage');
+      }
+    }
+
     break;
 }

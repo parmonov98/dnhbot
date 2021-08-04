@@ -1,40 +1,32 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-09 10:50+0500\n"
-"PO-Revision-Date: 2021-07-09 10:50+0500\n"
+"POT-Creation-Date: 2021-08-04 09:07+0500\n"
+"PO-Revision-Date: 2021-08-04 09:12+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: bot.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: routes\n"
+"X-Poedit-SearchPath-1: libs\n"
 
-#: bot.php:37 bot.php:46
-msgid ""
-"This bot helps you to check if a domain name is busy or not. to check a "
-"domain send domain name as example.com"
-msgstr ""
-"This bot helps you to check if a domain name is busy or not. to check a "
-"domain send domain name as example.com - US"
+#: libs/functions.php:76
+msgid "Notify Me"
+msgstr "Notify Me 🗣"
 
-#: bot.php:92
-msgid "undefined error occured!"
-msgstr "undefined error occured! - US"
+#: libs/functions.php:82
+msgid "Test message"
+msgstr "Test message 📥"
 
-#: bot.php:102
-msgid ""
-"Welcome. This bot helps you to check if a domain name is busy or not. to "
-"check a domain send domain name as example.com"
-msgstr ""
-"Welcome. This bot helps you to check if a domain name is busy or not. to "
-"check a domain send domain name as example.com - US"
-
-#: bot.php:130 bot.php:158 bot.php:186
+#: routes/callback_queries.php:20 routes/callback_queries.php:40
+#: routes/callback_queries.php:58 routes/messages.php:80
+#: routes/messages.php:128
 msgid ""
 "WELL! you have changed your language. This bot helps you to check if a "
 "domain name is busy or not. to check a domain send domain name as example.com"
@@ -43,41 +35,91 @@ msgstr ""
 "domain name is busy or not. to check a domain send domain name as example."
 "com - US"
 
-#: bot.php:208 bot.php:219
+#: routes/callback_queries.php:25 routes/callback_queries.php:44
+#: routes/callback_queries.php:62
+msgid "Language changed"
+msgstr "Language changed"
+
+#: routes/callback_queries.php:73
+msgid "You created a task to notify about domain changes."
+msgstr "You created a task to notify about domain changes."
+
+#: routes/messages.php:8
+msgid ""
+"This bot helps you to check if a domain name is busy or not. to check a "
+"domain send domain name as example.com"
+msgstr ""
+"This bot helps you to check if a domain name is busy or not. to check a "
+"domain send domain name as example.com - US"
+
+#: routes/messages.php:35
+msgid ""
+"Welcome back! If you want to change language choose one of languages below."
+msgstr ""
+"Welcome back! If you want to change language choose one of languages below."
+
+#: routes/messages.php:45
+msgid "undefined error occured!"
+msgstr "undefined error occured!"
+
+#: routes/messages.php:55
 msgid ""
 "Welcome. This bot helps you to check if a domain name is busy or not. to "
-"check a domain send domain name as example.com."
+"check a domain send domain name as example.com"
 msgstr ""
 "Welcome. This bot helps you to check if a domain name is busy or not. to "
-"check a domain send domain name as example.com. - US"
+"check a domain send domain name as example.com - US"
 
-#: bot.php:238
+#: routes/messages.php:101
 msgid ""
-"Unknown problem occured while checking your domain. Please, try later again"
+"you have changed your language. This bot helps you to check if a domain name "
+"is busy or not. to check a domain send domain name as example.com"
 msgstr ""
-"Unknown problem occured while checking your domain. Please, try later again "
-"- US"
+"you have changed your language. This bot helps you to check if a domain name "
+"is busy or not. to check a domain send domain name as example.com"
 
-#: bot.php:249
-msgid "hidden"
-msgstr "hidden - US"
+#: routes/messages.php:140 routes/messages.php:156
+msgid "Invalid domain or url. send you the domain as example.com"
+msgstr ""
 
-#: bot.php:253
+#: routes/messages.php:198 routes/messages.php:211 routes/messages.php:226
+#: routes/messages.php:240 routes/messages.php:253 routes/messages.php:275
+msgid "-"
+msgstr "-"
+
+#: routes/messages.php:281
 msgid "Domain"
-msgstr "Domain - US"
+msgstr "Domain"
 
-#: bot.php:254
+#: routes/messages.php:282
 msgid "Created"
-msgstr "Created - US"
+msgstr "Created"
 
-#: bot.php:255
+#: routes/messages.php:283
 msgid "Expires"
-msgstr "Expires - US"
+msgstr "Expires"
 
-#: bot.php:256
+#: routes/messages.php:284
 msgid "Registrar"
-msgstr "Registrar - US"
+msgstr "Registrar"
 
-#: bot.php:257
+#: routes/messages.php:285
 msgid "Owner"
-msgstr "Owner - US"
+msgstr "Owner"
+
+#~ msgid ""
+#~ "Welcome. This bot helps you to check if a domain name is busy or not. to "
+#~ "check a domain send domain name as example.com."
+#~ msgstr ""
+#~ "Welcome. This bot helps you to check if a domain name is busy or not. to "
+#~ "check a domain send domain name as example.com. - US"
+
+#~ msgid ""
+#~ "Unknown problem occured while checking your domain. Please, try later "
+#~ "again"
+#~ msgstr ""
+#~ "Unknown problem occured while checking your domain. Please, try later "
+#~ "again - US"
+
+#~ msgid "hidden"
+#~ msgstr "hidden - US"

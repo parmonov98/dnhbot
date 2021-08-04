@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-19 11:50+0500\n"
-"PO-Revision-Date: 2021-07-19 11:51+0500\n"
+"POT-Creation-Date: 2021-08-04 09:10+0500\n"
+"PO-Revision-Date: 2021-08-04 09:10+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -10,13 +10,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
-"X-Poedit-Basepath: ../../../routes\n"
+"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: routes\n"
+"X-Poedit-SearchPath-1: libs\n"
 
-#: callback_queries.php:20 callback_queries.php:40 callback_queries.php:58
-#: messages.php:79 messages.php:127
+#: libs/functions.php:76
+msgid "Notify Me"
+msgstr "Уведомить меня 🗣"
+
+#: libs/functions.php:82
+#, fuzzy
+#| msgid "Test message 📥"
+msgid "Test message"
+msgstr "Тестовое сообщение 📥"
+
+#: routes/callback_queries.php:20 routes/callback_queries.php:40
+#: routes/callback_queries.php:58 routes/messages.php:80
+#: routes/messages.php:128
 msgid ""
 "WELL! you have changed your language. This bot helps you to check if a "
 "domain name is busy or not. to check a domain send domain name as example.com"
@@ -24,11 +37,16 @@ msgstr ""
 "Круто! Вы изменили язык интерфейс. Этот бот поможет вам проверить, занято ли "
 "доменное имя. Для проверки домена отправьте доменное имя как example.com"
 
-#: callback_queries.php:25 callback_queries.php:44 callback_queries.php:62
+#: routes/callback_queries.php:25 routes/callback_queries.php:44
+#: routes/callback_queries.php:62
 msgid "Language changed"
 msgstr "Язык изменен"
 
-#: messages.php:7
+#: routes/callback_queries.php:73
+msgid "You created a task to notify about domain changes."
+msgstr "Вы создали задачу для уведомления об изменении домена."
+
+#: routes/messages.php:8
 msgid ""
 "This bot helps you to check if a domain name is busy or not. to check a "
 "domain send domain name as example.com"
@@ -36,17 +54,17 @@ msgstr ""
 "Этот бот поможет вам проверить, занято ли доменное имя. для проверки домена. "
 "Отправьте доменное имя как example.com"
 
-#: messages.php:34
+#: routes/messages.php:35
 msgid ""
 "Welcome back! If you want to change language choose one of languages below."
 msgstr ""
 "Добро пожаловать. Если Вы хотите изменить язык, используйте кнопки внизу."
 
-#: messages.php:44
+#: routes/messages.php:45
 msgid "undefined error occured!"
 msgstr "произошла неопределенная ошибка!"
 
-#: messages.php:54
+#: routes/messages.php:55
 msgid ""
 "Welcome. This bot helps you to check if a domain name is busy or not. to "
 "check a domain send domain name as example.com"
@@ -54,7 +72,7 @@ msgstr ""
 "Добро пожаловать. Этот бот поможет вам проверить, занято ли доменное имя. "
 "Для проверки домена отправьте доменное имя как example.com"
 
-#: messages.php:100
+#: routes/messages.php:101
 msgid ""
 "you have changed your language. This bot helps you to check if a domain name "
 "is busy or not. to check a domain send domain name as example.com"
@@ -62,27 +80,32 @@ msgstr ""
 "круто! Вы изменили язык интерфейс. Этот бот поможет вам проверить, занято ли "
 "доменное имя. Для проверки домена отправьте доменное имя как example.com"
 
-#: messages.php:139 messages.php:157
+#: routes/messages.php:140 routes/messages.php:156
 msgid "Invalid domain or url. send you the domain as example.com"
 msgstr "Не корректный Адрес или домен. Отправьте домен как example.ru"
 
-#: messages.php:253
+#: routes/messages.php:198 routes/messages.php:211 routes/messages.php:226
+#: routes/messages.php:240 routes/messages.php:253 routes/messages.php:275
+msgid "-"
+msgstr "-"
+
+#: routes/messages.php:281
 msgid "Domain"
 msgstr "Домен"
 
-#: messages.php:254
+#: routes/messages.php:282
 msgid "Created"
 msgstr "Создан"
 
-#: messages.php:255
+#: routes/messages.php:283
 msgid "Expires"
 msgstr "Истекает"
 
-#: messages.php:256
+#: routes/messages.php:284
 msgid "Registrar"
 msgstr "Регистратор"
 
-#: messages.php:257
+#: routes/messages.php:285
 msgid "Owner"
 msgstr "Владелец"
 

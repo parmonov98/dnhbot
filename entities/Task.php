@@ -4,9 +4,9 @@ namespace entities;
 
 /**
  * @Entity
- * @Table(name="patterns")
+ * @Table(name="tasks")
  */
-class Pattern
+class Task
 {
   /**
    * @Id
@@ -19,22 +19,17 @@ class Pattern
   /**
    * @Column(type="string")
    */
-  private $name;
+  private $expiration_date;
 
   /**
    * @Column(type="string")
    */
-  private $value;
-
-  /**
-   * @Column(type="string")
-   */
-  private $type;
+  private $domain;
 
 
   /**
-   * Many patterns belong to one user
-   * @ManyToOne(targetEntity="User", inversedBy="patterns")
+   * Many tasks belong to one user
+   * @ManyToOne(targetEntity="User", inversedBy="tasks")
    * @JoinColumn(name="user_id", referencedColumnName="id", nullable=false)
    * @var \entities\User
    */
@@ -58,7 +53,7 @@ class Pattern
      *
      * @return Pattern
      */
-    public function setName($name)
+    public function setExpirationDate($name)
     {
         $this->name = $name;
 
@@ -70,7 +65,7 @@ class Pattern
      *
      * @return string
      */
-    public function getName()
+    public function getExpirationDate()
     {
         return $this->name;
     }
@@ -80,9 +75,9 @@ class Pattern
      *
      * @param string $value
      *
-     * @return Pattern
+     * @return string
      */
-    public function setValue($value)
+    public function setDomain($value)
     {
         $this->value = $value;
 
@@ -94,33 +89,9 @@ class Pattern
      *
      * @return string
      */
-    public function getValue()
+    public function getDomain()
     {
         return $this->value;
-    }
-
-    /**
-     * Set type.
-     *
-     * @param string $type
-     *
-     * @return Pattern
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get type.
-     *
-     * @return string
-     */
-    public function getType()
-    {
-        return $this->type;
     }
 
     /**

@@ -73,13 +73,13 @@ function getNotifyMeButtons($domain)
     'inline_keyboard' => [
       [
         [
-          'text' => "Notify Me 🗣",
+          'text' => _("Notify Me"),
           "callback_data" => 'notify/' . $domain
         ],        
       ],
       [
         [
-          'text' => "Test message 📥",
+          'text' => _("Test message"),
           "callback_data" => 'send/' . $domain
         ],        
       ]
@@ -137,7 +137,7 @@ function sendMessage($content, $method, $type = '')
 
   curl_close($curl);
 
-  file_put_contents("return_sent.txt", $output);
+  // file_put_contents("return_sent.txt", $output);
   return $output;
 }
 
