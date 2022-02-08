@@ -192,10 +192,12 @@ if ($command->execute()) {
 }
 
 
+
 if ($raw) {
-//     dump($raw);
+     dump($raw);
 
     $patternsOfDomain = $entityManager->getRepository('entities\Pattern')->findBy(['type' => 'domain']);
+//    dd($patternsOfDomain);
     $domain = "";
     foreach ($patternsOfDomain as $pattern) {
         $patternText = $pattern->getValue();
@@ -205,7 +207,7 @@ if ($raw) {
         }
     }
     if ($domain == "") {
-        $domain = _("-");
+        $domain = __("-");
     }
 
     $patternsOfCreationDate = $entityManager->getRepository('entities\Pattern')->findBy(['type' => 'creation_date']);
@@ -281,7 +283,15 @@ if ($raw) {
         }
     }
     if ($IPAdress == "") {
-        $IPAdress = _("-");
+        $raw = null;
+        $command = new Command('/usr/bin/dig +short ' . $query);
+        if ($command->execute()) {
+            $IPAdress = $command->getOutput();
+        } else {
+            echo $command->getError();
+            $exitCode = $command->getExitCode();
+            $IPAdress = _("-");
+        }
     }
 }
 
@@ -297,8 +307,7 @@ $ownerText = __("Owner");
 
 $registrar = str_ireplace(["<", '>'], ['', ''], $registrar);
 $owner = addcslashes($owner, "><");
-$text = "<u><b>{$domainText}</b></u>: {$domain} => $IPAdress ;\n<u><b>{$creationDateText}</b></u>: {$creationDate} ;\n<u><b>{$expirationDateText}</b></u>: {$expirationDate};\n<u><b>{$registrarText}</b></u>: {$registrar} ;\n<u><b>{$ownerText}</b></u>: {$owner}.";
-//dd($text);
+$text = "<u><b>{$domainText}</b></u>: {$domain} \n<b><u>IP</u></b>: $IPAdress ;\n<u><b>{$creationDateText}</b></u>: {$creationDate} ;\n<u><b>{$expirationDateText}</b></u>: {$expirationDate};\n<u><b>{$registrarText}</b></u>: {$registrar} ;\n<u><b>{$ownerText}</b></u>: {$owner}.";
 $data = [
     'chat_id' => $request['message']['from']['id'],
     'text' => $text,
@@ -308,7 +317,7 @@ $data = [
 ];
 
 $res = sendMessage($data, 'sendMessage');
-dd($res);
+//dd($res);
 
 if ($domain == '' || $creationDate == '-' || $expirationDate == '-' || $registrar == '-' || $IPAdress == '-' || $owner == '-') {
     // echo $DotEnv->get('BOT_OWNER');

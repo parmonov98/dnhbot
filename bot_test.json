@@ -1,2 +1,2 @@
-{"update_id":144200641,
-"message":{"message_id":1414,"from":{"id":831079550,"is_bot":false,"first_name":"\u041c\u0443\u0437\u044b\u043a\u0430 \u044d\u0442\u043e \u0436\u0438\u0437\u043d.","username":"Jetemxxxxx","language_code":"en"},"chat":{"id":831079550,"first_name":"\u041c\u0443\u0437\u044b\u043a\u0430 \u044d\u0442\u043e \u0436\u0438\u0437\u043d.","username":"Jetemxxxxx","type":"private"},"date":1644300065,"text":"/uz","entities":[{"offset":0,"length":3,"type":"bot_command"}]}}
+{"update_id":144200643,
+"message":{"message_id":1418,"from":{"id":831079550,"is_bot":false,"first_name":"\u041c\u0443\u0437\u044b\u043a\u0430 \u044d\u0442\u043e \u0436\u0438\u0437\u043d.","username":"Jetemxxxxx","language_code":"en"},"chat":{"id":831079550,"first_name":"\u041c\u0443\u0437\u044b\u043a\u0430 \u044d\u0442\u043e \u0436\u0438\u0437\u043d.","username":"Jetemxxxxx","type":"private"},"date":1644300124,"text":"dev.ru","entities":[{"offset":0,"length":6,"type":"url"}]}}

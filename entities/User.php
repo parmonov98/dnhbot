@@ -147,41 +147,41 @@ class User
     $this->posts = new \Doctrine\Common\Collections\ArrayCollection();
   }
 
-  /**
-   * Add post.
-   *
-   * @param \entities\Post $post
-   *
-   * @return User
-   */
-  public function addPost(\entities\Post $post)
-  {
-    $this->posts[] = $post;
-
-    return $this;
-  }
-
-  /**
-   * Remove post.
-   *
-   * @param \entities\Post $post
-   *
-   * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-   */
-  public function removePost(\entities\Post $post)
-  {
-    return $this->posts->removeElement($post);
-  }
-
-  /**
-   * Get posts.
-   *
-   * @return \Doctrine\Common\Collections\Collection
-   */
-  public function getPosts()
-  {
-    return $this->posts;
-  }
+//  /**
+//   * Add post.
+//   *
+//   * @param \entities\Post $post
+//   *
+//   * @return User
+//   */
+//  public function addPost(\entities\Post $post)
+//  {
+//    $this->posts[] = $post;
+//
+//    return $this;
+//  }
+//
+//  /**
+//   * Remove post.
+//   *
+//   * @param \entities\Post $post
+//   *
+//   * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+//   */
+//  public function removePost(\entities\Post $post)
+//  {
+//    return $this->posts->removeElement($post);
+//  }
+//
+//  /**
+//   * Get posts.
+//   *
+//   * @return \Doctrine\Common\Collections\Collection
+//   */
+//  public function getPosts()
+//  {
+//    return $this->posts;
+//  }
 
   /**
    * Set telegramId.
