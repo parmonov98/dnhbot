@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-08-04 09:15+0500\n"
-"PO-Revision-Date: 2021-08-04 09:15+0500\n"
+"POT-Creation-Date: 2022-02-08 09:56+0500\n"
+"PO-Revision-Date: 2022-02-08 09:58+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uz\n"
@@ -15,38 +15,43 @@ msgstr ""
 "X-Poedit-SearchPath-0: routes\n"
 "X-Poedit-SearchPath-1: libs\n"
 
-#: libs/functions.php:76
-#, fuzzy
-#| msgid "Notify Me 🗣"
+#: libs/functions.php:106
 msgid "Notify Me"
-msgstr "Xabar ber 🗣"
+msgstr "Xabar ber🗣"
 
-#: libs/functions.php:82
-#, fuzzy
-#| msgid "Test message 📥"
+#: libs/functions.php:112
 msgid "Test message"
-msgstr "Test xabar 📥"
+msgstr "Test xabar📥"
 
-#: routes/callback_queries.php:20 routes/callback_queries.php:40
-#: routes/callback_queries.php:58 routes/messages.php:80
-#: routes/messages.php:128
+#: routes/callback_queries.php:27 routes/callback_queries.php:47
+#: routes/callback_queries.php:65 routes/messages.php:135
 msgid ""
-"WELL! you have changed your language. This bot helps you to check if a "
+"Well! you have changed your language. This bot helps you to check if a "
 "domain name is busy or not. to check a domain send domain name as example.com"
 msgstr ""
 "Ajoyib! Bu siz domenni band yoki band emasligini tekshirib beradi. Sinab "
 "ko'rish uchun example.com ko'rinishadi yuboring"
 
-#: routes/callback_queries.php:25 routes/callback_queries.php:44
-#: routes/callback_queries.php:62
+#: routes/callback_queries.php:32 routes/callback_queries.php:51
+#: routes/callback_queries.php:69
 msgid "Language changed"
 msgstr "Til o'zgardi"
 
-#: routes/callback_queries.php:73
-msgid "You created a task to notify about domain changes."
-msgstr "Siz domenda bo'ladigan o'zgarishlarga yozildiz."
+#: routes/callback_queries.php:81
+msgid "Test"
+msgstr "Test - UZ"
 
-#: routes/messages.php:8
+#: routes/callback_queries.php:82
+msgid "You`ll be notified about domain changes"
+msgstr "Sizga domenda bo'ladigan o'zgarishlar haqida xabar berib boriladi"
+
+#: routes/callback_queries.php:95 routes/messages.php:206
+#: routes/messages.php:219 routes/messages.php:233 routes/messages.php:247
+#: routes/messages.php:260 routes/messages.php:282
+msgid "-"
+msgstr "-"
+
+#: routes/messages.php:9
 msgid ""
 "This bot helps you to check if a domain name is busy or not. to check a "
 "domain send domain name as example.com"
@@ -54,18 +59,18 @@ msgstr ""
 "Bu siz domenni band yoki band emasligini tekshirib beradi. Sinab ko'rish "
 "uchun example.com ko'rinishadi yuboring"
 
-#: routes/messages.php:35
+#: routes/messages.php:36
 msgid ""
 "Welcome back! If you want to change language choose one of languages below."
 msgstr ""
 "Qaytganizdan xursandman! Tilni o'zgartirmoqchi bo'lsangiz pastdagi "
 "tugmalardan foydalaning."
 
-#: routes/messages.php:45
+#: routes/messages.php:46
 msgid "undefined error occured!"
 msgstr "noma'lum xatolik yuz berdi!"
 
-#: routes/messages.php:55
+#: routes/messages.php:56
 msgid ""
 "Welcome. This bot helps you to check if a domain name is busy or not. to "
 "check a domain send domain name as example.com"
@@ -73,43 +78,58 @@ msgstr ""
 "Xush kelibsiz! Bu siz domenni band yoki band emasligini tekshirib beradi. "
 "Sinab ko'rish uchun example.com ko'rinishadi yuboring"
 
-#: routes/messages.php:101
+#: routes/messages.php:102
+#, fuzzy
+#| msgid ""
+#| "Well! you have changed your language. This bot helps you to check if a "
+#| "domain name is busy or not. to check a domain send domain name as example."
+#| "com"
 msgid ""
-"you have changed your language. This bot helps you to check if a domain name "
-"is busy or not. to check a domain send domain name as example.com"
+"Well! you have changed your language. This bot helps you to check if a "
+"domain name is busy or not. to check a domain send domain name as example.com"
 msgstr ""
-"siz tilni o'zgartirdiz. Bu siz domenni band yoki band emasligini tekshirib "
-"beradi. Sinab ko'rish uchun example.com ko'rinishadi yuboring"
+"Ajoyib! Bu siz domenni band yoki band emasligini tekshirib beradi. Sinab "
+"ko'rish uchun example.com ko'rinishadi yuboring"
 
-#: routes/messages.php:140 routes/messages.php:156
+#: routes/messages.php:147 routes/messages.php:162
 msgid "Invalid domain or url. send you the domain as example.com"
 msgstr ""
 "Noto'g'ri domen yoki URL. Iltimos domenni example.uz ko'rinishida yuboring"
 
-#: routes/messages.php:198 routes/messages.php:211 routes/messages.php:226
-#: routes/messages.php:240 routes/messages.php:253 routes/messages.php:275
-msgid "-"
-msgstr ""
-
-#: routes/messages.php:281
+#: routes/messages.php:287
 msgid "Domain"
 msgstr "Domen"
 
-#: routes/messages.php:282
+#: routes/messages.php:288
 msgid "Created"
 msgstr "Yaratilgan"
 
-#: routes/messages.php:283
+#: routes/messages.php:289
 msgid "Expires"
 msgstr "Tugash muddati"
 
-#: routes/messages.php:284
+#: routes/messages.php:290
 msgid "Registrar"
 msgstr "Ro'yxatdan o'tkizuvchi"
 
-#: routes/messages.php:285
+#: routes/messages.php:291
 msgid "Owner"
 msgstr "Domen egasi"
+
+#~ msgid ""
+#~ "you have changed your language. This bot helps you to check if a domain "
+#~ "name is busy or not. to check a domain send domain name as example.com"
+#~ msgstr ""
+#~ "siz tilni o'zgartirdiz. Bu siz domenni band yoki band emasligini "
+#~ "tekshirib beradi. Sinab ko'rish uchun example.com ko'rinishadi yuboring"
+
+#~ msgid "Hi"
+#~ msgstr "Salom"
+
+#, fuzzy
+#~| msgid "Reminder: expriation date is soon. DOMAIN: "
+#~ msgid "Reminder: expiration date is soon. DOMAIN: "
+#~ msgstr "Eslatma: Tugash muddati yaqin qolgan. DOMEN: "
 
 #~ msgid ""
 #~ "Welcome. This bot helps you to check if a domain name is busy or not. to "

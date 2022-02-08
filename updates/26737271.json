@@ -1,2 +1,0 @@
-{"update_id":26737271,
-"message":{"message_id":324,"from":{"id":94665561,"is_bot":false,"first_name":"Murod","last_name":"Parmonov","username":"parmonov98","language_code":"en"},"chat":{"id":94665561,"first_name":"Murod","last_name":"Parmonov","username":"parmonov98","type":"private"},"date":1625804182,"text":"/ru","entities":[{"offset":0,"length":3,"type":"bot_command"}]}}
